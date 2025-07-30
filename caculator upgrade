@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+int main() {
+    float a,b, sum;
+    char symbol;
+    
+    cout << "num1: ";
+    cin >> a;
+    cout << "num2: ";
+    cin >> b;
+    cout << "Operator: ";
+    cin >> symbol;
+    cout << endl;
+    
+    if(symbol == '+'){
+        sum = a + b;
+        cout << "total: " << sum << endl;
+    }
+        
+    else if(symbol == '-'){
+        sum = a - b;
+        cout << "total: " << sum << endl;
+    }
+      else if(symbol == '*'){
+        sum = a * b;
+        cout << "total: " << sum << endl;
+    }
+         else if(symbol == '/'){
+        sum = a / b;
+        cout << "total: " << sum << endl;
+    }
+    else{
+        cout << "Invalid Operators" << endl;
+    }
